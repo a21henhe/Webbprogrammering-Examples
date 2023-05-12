@@ -1,3 +1,4 @@
 HTML Variable.html
 HTML Find Element.html
 HTML Form Validate Keypress.html
+Ex1_StoreCustomer.html
