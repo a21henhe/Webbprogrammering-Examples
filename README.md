@@ -7,34 +7,6 @@ This repo contains examples and the API used in the Webbprograming course.
 - /booking - Here you find the booking API that your webb applic
 ## booking/getcustomer_XML.php
 ### Description
-Reads all information about a customer and updates last visit date to current date and time. Is used for logging in to a customer account.
-### Parameters
-customerID **REQUIRED** ID of the customer\
-### Return data
-~~~ xml
-      resourceID='1008'
-      name='Karl Hotel and Resort'
-      company='Karls'
-      location='Exmouth'
-      date='2001-07-20 00:00:00'
-      dateto='2001-07-21 00:00:00'
-      position='26'
-      status='2'
-      cost='40'
-      size='24'
-      auxdata=''
-  />
-  ...
-</bookings>
-~~~
-## booking/getcustomerbookings_XML
-### Description
-Get all bookings made by a certain customer
-### Parameters
-type **REQUIRED** Unique Application type. In this case Hotel_Demo for example login name of student\
-customerID **REQUIRED** ID of the customer\
-### Return data
-~~~ xml
 <bookings>
   <booking 
       application='Hotell_Demo'
