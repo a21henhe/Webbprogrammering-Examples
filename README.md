@@ -4,29 +4,7 @@ This repo contains examples and the API used in the Webbprograming course.
 - /Examples - Here you find code examples used in the course
 - /SPA-templates - Here you find single-page-application (SPA) templates 
 - /admin - Here you find tools to manipulate booking data
-- /booking - Here you find the booking API that your webb application should use
-
-# Webbprogrammering-API
-All data is returned as XML.
-
-## Sample usage Fetch API and JSON parameters
-Call the appropropriate service with the required (and optional) parameters. For example, to create a new customer the following Fetch-call can be used:
-~~~ js
-try {
-    const url = "../booking/makecustomer_XML.php";
-
-    // Manually create the JSON object to be submitted to our API
-    const params = {};
-    const inputs = document.querySelectorAll("#make-customer-form input[type='text']");
-    for(const input of inputs){
-        console.log(input)
-        params[input.name]=input.value;
-    }
-
-    // Make request
-    const response = await fetch(url,{
-        method: "post",
-        headers: {
+- /booking - Here you find the booking API that your webb application 
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
