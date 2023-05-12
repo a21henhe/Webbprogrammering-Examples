@@ -5,33 +5,6 @@
 			// THIS FILE MUST BE RENAMED TO dbconnect.php AND YOU MUST UPDATE WITH CORRECT DB CREDENTIALS BELOW
 			//---------------------------------------------------------------------------------------------------------------
 			define("DB_USER","USER FROM CONSTRUCTION COURSE");
-			define("DB_PASSWORD","PASSWORD FROM CONSTRUCTION COURSE");
-
-			define("DB_HOST","localhost");
-			define("DB_NAME","Bookin
-			function endsWith($haystack, $needle)
-			{
-			    return $needle === "" || substr($haystack, -strlen($needle)) === $needle;
-			}
-
-			//---------------------------------------------------------------------------------------------------------------
-			// presenthtml - Allows us to pass national characters - & is replaced with %
-			//---------------------------------------------------------------------------------------------------------------
-
-			function presenthtml($str) {
-					return str_replace("&","%",$str);
-			}
-
-			//---------------------------------------------------------------------------------------------------------------
-			// getpost - Allows us to pass posts even if array position does not exist
-			//---------------------------------------------------------------------------------------------------------------
-
-			function getpost($param) {
-					if(isset($_POST[$param])){
-							$ret=$_POST[$param];
-					}else{
-							$ret="";			
-					}
 					return $ret;
 			}
 			
