@@ -9,17 +9,6 @@ This repo contains examples and the API used in the Webbprograming course.
             'Content-Type': 'application/json'
         },
 
-    }
-    const response_text = await response.text(); // <-- Contains the XML returned byt the API
-}catch(err){
-    console.log("error", err);
-}
-~~~
-
-## Sample usage Parsing XML response
-When we have received a response from the API we can parse and use the data to create our dynamic web page. Here is an example of how you can parse the XML:
-~~~ js
-...
 const response_text = await response.text();
 
 // Parse text response as XML document
