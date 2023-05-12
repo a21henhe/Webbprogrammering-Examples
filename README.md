@@ -4,32 +4,7 @@ This repo contains examples and the API used in the Webbprograming course.
 - /Examples - Here you find code examples used in the course
 - /SPA-templates - Here you find single-page-application (SPA) templates 
 - /admin - Here you find tools to manipulate booking data
-- /booking - Here you find the booking API that your webb application 
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-  });
-}
-~~~
-
-# Webbprogrammering-API Reference Manual
-
-## booking/makecustomer_XML.php
-### Description
-Creates a customer.
-
-**This API call has a built-in artifical delay of 3-5s**
-### Parameters
-ID **REQUIRED** ID of the customer\
-firstname **REQUIRED** Customers firstname\
-lastname **REQUIRED** Customers lastname\
-email **REQUIRED** Customers email\
-address **REQUIRED** Customers address\
-auxdata _OPTIONAL_ Auxillary information about customer\
-### Return data
-~~~ xml
-<created status="OK"/>
-~~~
+- /booking - Here you find the booking API that your webb applic
 ## booking/getcustomer_XML.php
 ### Description
 Reads all information about a customer and updates last visit date to current date and time. Is used for logging in to a customer account.
