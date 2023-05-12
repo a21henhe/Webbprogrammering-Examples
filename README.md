@@ -9,15 +9,6 @@ This repo contains examples and the API used in the Webbprograming course.
             'Content-Type': 'application/json'
         },
 
-    // Make request
-    const response = await fetch(url,{
-        method: "post",
-        body: form
-    });
-
-    // Act on the response
-    if(!response.ok){
-        throw new Error(await response.text());
     }
     const response_text = await response.text(); // <-- Contains the XML returned byt the API
 }catch(err){
