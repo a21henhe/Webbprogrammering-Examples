@@ -8,25 +8,7 @@
 			define("DB_PASSWORD","PASSWORD FROM CONSTRUCTION COURSE");
 
 			define("DB_HOST","localhost");
-			define("DB_NAME","BookingSystem");
-			//---------------------------------------------------------------------------------------------------------------
-
-
-      $pdo=null;
-			
-			//---------------------------------------------------------------------------------------------------------------
-			// endsWith - does string start with?
-			//---------------------------------------------------------------------------------------------------------------
-
-			function startsWith($haystack, $needle)
-			{
-			    return $needle === "" || strpos($haystack, $needle) === 0;
-			}
-
-			//---------------------------------------------------------------------------------------------------------------
-			// endsWith - does string end with?
-			//---------------------------------------------------------------------------------------------------------------
-
+			define("DB_NAME","Bookin
 			function endsWith($haystack, $needle)
 			{
 			    return $needle === "" || substr($haystack, -strlen($needle)) === $needle;
