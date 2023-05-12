@@ -13,21 +13,6 @@ This repo contains examples and the API used in the Webbprograming course.
       customerID='Haakon'
       resourceID='1008'
       name='Karl Hotel and Resort'
-      company='Karls'
-      location='Exmouth'
-      date='2001-07-20 00:00:00'
-      dateto='2001-07-20 00:00:00'
-      position='13'
-      cost='280'
-      category='Hotel'
-      size='200'
-      auxdata='None'
-  />
-  ...
-</bookings>
-~~~
-## booking/getresources_XML.php
-### Description
 The booking/getresources_XML.php performs a search using a set of search terms. If none is given, that search term is ignored. The terms name, location and company use a logical or if more than one term is given. The full text search works in isolation from the other terms.
 ### Parameters
 type **REQUIRED** Application type, in the example Hotel_Demo\
