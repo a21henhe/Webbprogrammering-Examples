@@ -17,24 +17,6 @@ customerID **REQUIRED** ID of the customer\
 </customers>
 ~~~
 ## booking/makebooking_XML.php
-### Description
-Makes a booking and stores it in the database. (Deletes all temporary bookings for the user with that customerID that does not have state=2)
-
-**This API call has a built-in artifical delay of 3-5s**
-### Parameters
-type **REQUIRED** the application to book resource in\
-resourceID **REQUIRED** ID of the resource\
-date **REQUIRED** Date of the booking. Format: 2012-10-02 (year-month-day)\
-dateto **REQUIRED** End Date of the booking if there is one. Format: 2012-10-02 (year-month-day)\
-customerID **REQUIRED** ID of the customer\
-status **REQUIRED** Temporary or "real" booking. (1 = temporary, 2 = permanent)\
-position **REQUIRED** Position of the booking (Integer)\
-rebate _OPTIONAL_ Rebate, defaults to 0\
-auxdata _OPTIONAL_ Auxillary data\
-### Return data
-~~~ xml
-<result size='20' bookingcost='100' remaining='4' />		
-~~~
 ## booking/getbookings_XML.php
 ### Description
 Reads bookings for a resource given the resource ID. If the searchresource parameter is non-empty, uses LIKE to match the resource ID.
