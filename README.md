@@ -8,27 +8,6 @@ This repo contains examples and the API used in the Webbprograming course.
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-
-const response_text = await response.text();
-
-// Parse text response as XML document
-xml_parser = new DOMParser();
-xml_document = xml_parser.parseFromString(response_text, "text/xml");
-## Sample usage jQuery (obsolete)
-Call the appropropriate service with the required (and optional) parameters. For example, to create a new customer the following AJAX-call using jQuery can be used:
-~~~ js
-$.ajax({
-  type: 'POST',
-  url: '../booking/makecustomer_XML.php',
-  data: { ID: escape(customerID),
-          firstname: escape(firstname),
-          lastname: escape(lastname),
-          email: escape(email),
-          address: escape(address),
-          auxdata: escape(auxdata),
-        },
-  success:  ResultCustomern,
-  error: errormsg
   });
 }
 ~~~
