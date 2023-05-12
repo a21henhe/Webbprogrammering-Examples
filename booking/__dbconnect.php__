@@ -19,24 +19,6 @@
 							}else if(empty($_POST[$param])){
 									$ret="UNK";
 							}else{
-									$ret=htmlentities(urldecode($_POST[$param]));							
-							}
-					}else{
-							$ret="UNK";
-					}
-					return $ret;
-			}
-
-			
-
-			//---------------------------------------------------------------------------------------------------------------
-			// cntparam - Counts number of booleans that are true
-			//---------------------------------------------------------------------------------------------------------------
-
-			function cntparam($p1,$p2,$p3,$p4) {
-					$cnt=0;
-					if($p1) $cnt++;
-					if($p2) $cnt++;
 					if($p3) $cnt++;
 					if($p4) $cnt++;				
 					return $cnt;
