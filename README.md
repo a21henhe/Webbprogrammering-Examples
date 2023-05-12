@@ -14,18 +14,6 @@ const response_text = await response.text();
 // Parse text response as XML document
 xml_parser = new DOMParser();
 xml_document = xml_parser.parseFromString(response_text, "text/xml");
-
-// Search in your XML document for data that you need (in this example we retreive all 'resource' elements)
-const xml_nodes = xml_document.querySelectorAll('resource');
-for (const xml_node of xml_nodes) {
-    console.log(xml_node);
-    for (const attribute of xml_node.attributes) {
-        console.log(attribute.name, attribute.value);
-    }
-}
-...
-~~~
-
 ## Sample usage jQuery (obsolete)
 Call the appropropriate service with the required (and optional) parameters. For example, to create a new customer the following AJAX-call using jQuery can be used:
 ~~~ js
