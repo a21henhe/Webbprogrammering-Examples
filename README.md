@@ -12,25 +12,6 @@ Reads all information about a customer and updates last visit date to current da
 customerID **REQUIRED** ID of the customer\
 ### Return data
 ~~~ xml
-<customers>
-  <customer id="test" firstname="test" lastname="test" address="test" lastvisit="2012-10-16 12:31:51" email="test" auxdata="None!" />
-</customers>
-~~~
-## booking/makebooking_XML.php
-## booking/getbookings_XML.php
-### Description
-Reads bookings for a resource given the resource ID. If the searchresource parameter is non-empty, uses LIKE to match the resource ID.
-### Parameters
-type **REQUIRED** Unique Application type. In this case Hotel_Demo for example login name of student\
-resourceID _OPTIONAL_ ID of the resource\
-searchresource _OPTIONAL_ If not empty searches for resource ID using like\
-date _OPTIONAL_ Date of the booking. Format: 2012-10-02 (year-month-day)\
-### Return data
-~~~ xml
-<bookings>
-  <booking 
-      application='Hotell_Demo'
-      customerID='Leiflert'
       resourceID='1008'
       name='Karl Hotel and Resort'
       company='Karls'
