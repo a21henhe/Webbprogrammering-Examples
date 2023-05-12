@@ -8,31 +8,6 @@ This repo contains examples and the API used in the Webbprograming course.
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(params)
-    });
-
-    // Act on the response
-    if(!response.ok){
-        throw new Error(await response.text());
-    }
-    const response_text = await response.text(); // <-- Contains the XML returned byt the API
-}catch(err){
-    console.log("error", err);
-}
-~~~
-## Sample usage Fetch API and FormData paramters
-Call the appropropriate service with the required (and optional) parameters. For example, to create a new customer the following Fetch-call can be used:
-~~~ js
-try {
-    const url = "../booking/makecustomer_XML.php";
-
-    // Manually create the form data to be submitted to our API
-    const form = new FormData();
-    const inputs = document.querySelectorAll("#make-customer-form input[type='text']");
-    for(const input of inputs){
-        console.log(input)
-        form.append(input.name,input.value);
-    }
 
     // Make request
     const response = await fetch(url,{
