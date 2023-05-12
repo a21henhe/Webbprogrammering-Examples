@@ -9,28 +9,6 @@
 -- Important: Only use on personal server do not run on wwwlab 
 -- Important: 
 
-use BookingSystem;
-
-create table customer(
-		ID 					varchar(32),
-		lastvisit 	datetime,
-		firstname		varchar(64),
-		lastname		varchar(64),		
-		address			varchar(64),
-		email				varchar(64),
-		auxdata			varchar(2048),
-		primary key(ID)
-);
-
-create table click(
-		ID					integer not null auto_increment,
-		time				datetime,
-		type				varchar(32),
-		customerID 	varchar(32),
-		clickdata		varchar(32),
-		primary key(ID)
-);
-
 create table resource(
 		ID 					varchar(32),
 		name				varchar(64),
