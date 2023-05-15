@@ -2,4 +2,3 @@ README.md
 booking.sql
 documentation.html
 .gitignore
-ajax_api_index.html
