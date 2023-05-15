@@ -1,2 +1,4 @@
 .gitignore
 README.md
+documentation.html
+ajax_api_index.html
