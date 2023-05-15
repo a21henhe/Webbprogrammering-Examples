@@ -23,13 +23,7 @@ fulltext _OPTIONAL_ Tries to find a match from name, company or location\
 
 ### Return data
 ~~~ xml
-<resources>
-  <resource 
-      id='1001'
-      name='Pilkington Inn'
-      company='Sunside Hotels'
-      location='Manchester'
-      size='15'
+           
       cost='350'
       category='Hostel'
       auxdata='None'
