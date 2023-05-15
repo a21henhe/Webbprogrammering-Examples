@@ -5,14 +5,6 @@
 -- create database BookingSystem;
 -- use BookingSystem;
 
--- Important: 
--- Important: Only use on personal server do not run on wwwlab 
--- Important: 
-
-create table resource(
-		ID 					varchar(32),
-		name				varchar(64),
-		type				varchar(32),
 		company			varchar(64),
 		location		varchar(64),
 		category		varchar(64),
