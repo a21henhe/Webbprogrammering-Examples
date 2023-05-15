@@ -1,2 +1,1 @@
-HTML Variable.html
-HTML Find Element.html
+.gitignore
