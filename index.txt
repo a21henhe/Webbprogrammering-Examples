@@ -1,4 +1,0 @@
-README.md
-booking.sql
-documentation.html
-.gitignore
